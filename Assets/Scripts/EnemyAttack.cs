@@ -43,7 +43,7 @@ public class EnemyAttack : MonoBehaviour
         // Detectamos si el XR Origin ha salido del rango
         XROrigin xrOrigin = other.GetComponentInParent<XROrigin>();
         // Si el objetivo es la cámara del XR Origin y ha salido del rango
-        if (xrOrigin != null && xrOrigin.Camera.transform == target)
+        if (xrOrigin != null && target == xrOrigin.Camera.transform)
         {
             // Desactivamos el modo de ataque
             attacking = false;
