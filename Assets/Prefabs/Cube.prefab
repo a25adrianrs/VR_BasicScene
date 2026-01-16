@@ -13,7 +13,9 @@ GameObject:
   - component: {fileID: 3987887559196761454}
   - component: {fileID: 3597834861272023607}
   - component: {fileID: 74408900940649139}
+  - component: {fileID: 8207973647119226949}
   - component: {fileID: 580880529007952293}
+  - component: {fileID: -758189507991131259}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -140,6 +142,27 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!135 &8207973647119226949
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1180572486072699562}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 30
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &580880529007952293
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -152,5 +175,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 559dabf77702ecd469c56d380c65c7f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SelfDestroy
-  minTime: 2
-  maxTime: 10
+  minTime: 10
+  maxTime: 15
+--- !u!114 &-758189507991131259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1180572486072699562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76e5ee93fb87b7c4dab41742b14afe98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyAttack
+  speed: 10
