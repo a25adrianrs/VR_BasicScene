@@ -175,8 +175,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 559dabf77702ecd469c56d380c65c7f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SelfDestroy
-  minTime: 10
-  maxTime: 15
+  minTime: 5
+  maxTime: 8
 --- !u!114 &-8427596529536162169
 MonoBehaviour:
   m_ObjectHideFlags: 0
